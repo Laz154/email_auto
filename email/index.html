@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - E-mails Automáticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Painel de Administração de E-mails</h1>
+        </header>
+        <main class="main-content">
+            <form id="email-form" class="form">
+                <div class="form-section">
+                    <label for="email-subject" class="form-label">Assunto:</label>
+                    <input type="text" id="email-subject" name="subject" class="form-input" placeholder="Digite o assunto" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="email-title" class="form-label">Título:</label>
+                    <input type="text" id="email-title" name="title" class="form-input" placeholder="Digite o título do e-mail" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="email-body" class="form-label">Corpo do E-mail:</label>
+                    <textarea id="email-body" name="body" class="form-textarea" rows="6" placeholder="Digite o conteúdo do e-mail" required></textarea>
+                </div>
+
+                <div class="form-section">
+                    <label for="image-attachment" class="form-label">Anexar Imagem:</label>
+                    <input type="file" id="image-attachment" name="image" class="form-file" accept="image/*">
+                </div>
+
+                <div class="form-section">
+                    <div class="html-option">
+                        <label class="form-label">Anexar HTML: <p>opcional*</p></label>
+                        <div class="html-toggle">
+                            <span class="toggle-arrow" id="toggle-html">▼</span>
+                        </div>
+                    </div>
+                    <div id="html-attachment-container" class="hidden">
+                        <input type="file" id="html-attachment" name="html" class="form-file" accept=".html">
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-submit">Enviar E-mail</button>
+                    <button type="reset" class="btn btn-reset">Limpar</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Painel de Administração</p>
+        </footer>
+    </div>
+    <script src="interectionPage.js"></script>
+</body>
+</html>

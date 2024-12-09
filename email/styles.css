@@ -1,0 +1,138 @@
+/* Reset básico */
+body, h1, p, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-input, .form-textarea, .form-file {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+/* Opção de HTML */
+.html-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.html-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-arrow {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #007BFF;
+}
+
+/* Ocultar por padrão */
+.hidden {
+    display: none;
+}
+
+/* Botões */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #c82333;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
